@@ -1,6 +1,7 @@
 from Figurasgeometricas import Figurasgeometricas
 from Triangulo import Triangulo
 from Circulo import Circulo
+from Cuadrado import Cuadrado
 
 
 
@@ -22,7 +23,12 @@ while True:
     elif opcion =="2":
         radio = int(input("digite el radio: "))
         ci = Circulo(radio)
-        print("El area del circulo es:",opcion, "es",ci.area() )
+        print("El area del circulo es:",opcion, "es",ci.area())
+    elif opcion == "3":
+        lado = float(input("digite el lado del cuadrado: "))
+        cu = Cuadrado(lado)
+        print("El area del cuadrado es:",opcion, "es",cu.area())
+  
     
 
 
