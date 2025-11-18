@@ -2,6 +2,7 @@ from Figurasgeometricas import Figurasgeometricas
 from Triangulo import Triangulo
 from Circulo import Circulo
 from Cuadrado import Cuadrado
+from Rectangulo import Rectangulo
 
 
 
@@ -9,11 +10,11 @@ from Cuadrado import Cuadrado
 
 while True:
     print("-----------------MENU------------")
-    print("triangulo(1)")
-    print("circulo(2)")
-    print("cuadrado(3)")
-    print("rectangulo(4)")
-    print("Cerrar(0)")
+    print("triangulo (1) ")
+    print("circulo (2) ")
+    print("cuadrado (3) ")
+    print("rectangulo (4) ")
+    print("Cerrar (0) ")
     opcion = input("digite el numero de la figura que desea hallar el area: ")
     if opcion == "1":
         base = int(input("digite la base: "))
@@ -28,7 +29,15 @@ while True:
         lado = float(input("digite el lado del cuadrado: "))
         cu = Cuadrado(lado)
         print("El area del cuadrado es:",opcion, "es",cu.area())
-  
+    elif opcion == "4":
+        base = float(input("digite la base: "))
+        altura = float(input("digite la altura: "))
+        re = Rectangulo(base,altura)
+        print("El area del rectangulo es:",opcion, "es" ,re.area())
+    else: 
+        opcion == "0"
+        print("fin del programa")
+        break
     
 
 
