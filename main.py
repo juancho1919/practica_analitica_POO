@@ -1,5 +1,6 @@
 from Figurasgeometricas import Figurasgeometricas
 from Triangulo import Triangulo
+from Circulo import Circulo
 
 
 
@@ -18,7 +19,11 @@ while True:
         altura = int(input("digite la altura: "))
         tr = Triangulo(altura,base)
         print("el area del triangulo es: ",opcion, "es", tr.area())
-   
+    elif opcion =="2":
+        radio = int(input("digite el radio: "))
+        ci = Circulo(radio)
+        print("El area del circulo es:",opcion, "es",ci.area() )
+    
 
 
         

@@ -1,9 +1,6 @@
 from Figurasgeometricas import Figurasgeometricas
 
-
-
-
-class CIRCULO(Figurasgeometricas):
+class Circulo(Figurasgeometricas):
     def __init__(self,radio):
         self.radio=radio
     def area(self):
