@@ -4,7 +4,7 @@ from Circulo import Circulo
 from Cuadrado import Cuadrado
 from Rectangulo import Rectangulo
 from Cilindro import Cilindro
-
+from Paralelograma import Paralelograma
 
 
 
@@ -16,6 +16,7 @@ while True:
     print("cuadrado (3) ")
     print("rectangulo (4) ")
     print("rectangulo (5) ")
+    print("paralelogramo (6) ")
     print("Cerrar (0) ")
     opcion = input("digite el numero de la figura que desea hallar el area: ")
     if opcion == "1":
@@ -42,8 +43,14 @@ while True:
         cil = Cilindro(opcion)
         cil.radio = radio_c
         cil.altura = altura_c
-
         print("El area del rectangulo es:",opcion, "es" ,cil.area())
+    elif opcion == "6":
+        altura_p = float(input("digite la altura: "))
+        base_p = float(input("digite la base: "))
+        pa = Paralelograma(opcion)
+        pa.altura = altura_p
+        pa.base = base_p
+        print("El area del rectangulo es:",opcion, "es" ,pa.area())
     else: 
         opcion == "0"
         print("fin del programa")
