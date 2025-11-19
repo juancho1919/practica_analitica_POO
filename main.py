@@ -6,6 +6,7 @@ from Rectangulo import Rectangulo
 from Cilindro import Cilindro
 from Paralelograma import Paralelograma
 from Pentagono import Pentagono
+from Deltoide import Deltoide
 
 
 
@@ -19,8 +20,7 @@ while True:
     print("rectangulo (5) ")
     print("paralelogramo (6) ")
     print("pentagono (7) ")
-    print("paralelogramo (6) ")
-
+    print("deltoide (8) ")
     print("Cerrar (0) ")
     opcion = input("digite el numero de la figura que desea hallar el area: ")
     if opcion == "1":
@@ -62,7 +62,13 @@ while True:
         pe.apotema = apotema
         pe.perimetro = perimetro
         print("el area de el pentagono es: ",pe.area())
-
+    elif opcion == "8":
+        diagonal1 = float(input("digite la primera diagonal: "))
+        diagonal2 = float(input("digite la segunda diagonal: "))
+        de = Deltoide(opcion)
+        de.diagonal1 = diagonal1
+        de.diagonal2 = diagonal2
+        print("el area de el pentagono es: ",de.area())
     else: 
         opcion == "0"
         print("fin del programa")
