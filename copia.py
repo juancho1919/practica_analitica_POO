@@ -8,3 +8,10 @@ print("la figura seleccionada es",nombre)
 #llamo la funcion paracalcular el area
 #tr = Triangulo(10,20)
 #tr.nombre = nombre
+
+#19-11-2025
+#cill = Cilindro(nombre)
+
+#cil.radio = 2.5
+#cil.altura = 5
+#cil.area()
