@@ -1,6 +1,8 @@
 from Figurasgeometricas import Figurasgeometricas
 
 class Paralelograma(Figurasgeometricas):
+    def __init__(self, nombre):
+        super().__init__(nombre)
 
     @property
     def base(self) -> float:

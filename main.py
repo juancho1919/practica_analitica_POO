@@ -5,6 +5,7 @@ from Cuadrado import Cuadrado
 from Rectangulo import Rectangulo
 from Cilindro import Cilindro
 from Paralelograma import Paralelograma
+from Pentagono import Pentagono
 
 
 
@@ -17,6 +18,9 @@ while True:
     print("rectangulo (4) ")
     print("rectangulo (5) ")
     print("paralelogramo (6) ")
+    print("pentagono (7) ")
+    print("paralelogramo (6) ")
+
     print("Cerrar (0) ")
     opcion = input("digite el numero de la figura que desea hallar el area: ")
     if opcion == "1":
@@ -50,7 +54,15 @@ while True:
         pa = Paralelograma(opcion)
         pa.altura = altura_p
         pa.base = base_p
-        print("El area del rectangulo es:",opcion, "es" ,pa.area())
+        print("El area del paralelogramo es:" ,pa.area())
+    elif opcion == "7":
+        perimetro = float(input("digite el perimetro: "))
+        apotema = float(input("digite la apotema: "))
+        pe = Pentagono(opcion)
+        pe.apotema = apotema
+        pe.perimetro = perimetro
+        print("el area de el pentagono es: ",pe.area())
+
     else: 
         opcion == "0"
         print("fin del programa")
